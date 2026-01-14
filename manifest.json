@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Reddit Inline Comments",
+  "version": "0.1",
+  "description": "View Reddit comments inline without leaving the feed.",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.reddit.com/*"],
+      "js": ["contentScript.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "icons": {
+    "128": "icons/android-chrome-192x192.png"
+  }
+}
